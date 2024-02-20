@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Datos de Envio</title>
+        <link rel="stylesheet" type="text/css" href="estiloDatosEnvio.css">
+        <!--<script src="funcion.js"></script>-->
+    </head>
+    <body>
+        <h3>Datos de envio: </h3>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <p>Ciudad: </p>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="Bog">Bogota D.C</option>
+                            <option value="Car">Cartagena</option>
+                            <option value="Med">Medellin</option>
+                            <option value="Tun">Tunja</option>
+                            <option value="Cuc">Cucuta</option>
+                        </select>
+                    </td>
+                </tr>    
+            </table>
+            <p>Direccion de entrega: </p>
+            <input type="text" id="dirEntrega" placeholder="Ingrese su direccion...">
+            <p>Descripcion extra: </p>
+            <textarea id="descEntrega"></textarea><br>
+            <input type="checkbox" id="propina">
+            <label>Propina</label>
+            <input type="checkbox" id="prioritario">
+            <label>Envio prioritario</label>
+            
+            <table>
+                <tr>
+                    <td><button type="button" id="volver2"><- Volver</button></td>
+                    <td><button type="button" id="confirmar">Confirmar compra</button></td>
+                </tr>
+            </table>
+        </form>
+    </body> 
+</html>    
