@@ -44,6 +44,17 @@ function guardarDatos() {
     }
 }
 
+// Funcion del boton siguiente
+document.addEventListener("DOMContentLoaded", function() {
+    const pag1 =  document.getElementById("index") !== null;
+    const pag2 =  document.getElementById("datosCompra") !== null;
+    const pag3 =  document.getElementById("datosEnvio") !== null;
+    if(pag1 || pag2 || pag3){
+        const boton1 = document.getElementById("sig");
+        boton1.addEventListener("click", guardarDatos);
+    }
+});
+
 // Funcion para que muestre datos la pagina resumen
 function obtenerDatos(){
     if (document.getElementById("resumen") !== null) {
@@ -81,13 +92,29 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 });
 
-// Funcion del boton siguiente
-document.addEventListener("DOMContentLoaded", function() {
-    const pag1 =  document.getElementById("index") !== null;
+function volver(){
     const pag2 =  document.getElementById("datosCompra") !== null;
     const pag3 =  document.getElementById("datosEnvio") !== null;
-    if(pag1 || pag2 || pag3){
-        const boton1 = document.getElementById("sig");
-        boton1.addEventListener("click", guardarDatos);
+    const pag4 = document.getElementById("resumen") !== null;
+    if(pag2){
+        window.location.href = "index.html?";
+    }
+    if(pag3){
+        window.location.href = "datosCompra.html?";
+    }
+    if(pag4){
+        window.location.href = "index.html?";
+    }
+}
+
+// Funcion del boton volver
+document.addEventListener("DOMContentLoaded", function() {
+    const pag2 =  document.getElementById("datosCompra") !== null;
+    const pag3 =  document.getElementById("datosEnvio") !== null;
+    const pag4 = document.getElementById("resumen") !== null;
+
+    if(pag2 || pag3 || pag4){
+        const boton1 = document.getElementById("volver");
+        boton1.addEventListener("click", volver);
     }
 });

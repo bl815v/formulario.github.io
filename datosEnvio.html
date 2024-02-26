@@ -2,13 +2,15 @@
 <html>
     <head>
         <title>Datos de Envio</title>
-        <link rel="stylesheet" type="text/css" href="estiloDatosEnvio.css">
+        <link rel="stylesheet" type="text/css" href="estiloEnvio.css">
         <script src="funcion.js"></script>
     </head>
     <body id="datosEnvio">
-        <h3>Datos de envio: </h3>
-        <form>
-            <table>
+        <form class="formulario">
+            <div class="titulos">
+            <h3>Datos de envio: </h3>
+            </div>
+            <table class="tablaCiudad">
                 <tr>
                     <td>
                         <p>Ciudad: </p>
@@ -28,15 +30,20 @@
             <input type="text" id="dirEntrega" placeholder="Ingrese su direccion...">
             <p>Descripcion extra: </p>
             <textarea id="descEntrega"></textarea><br>
-            <input type="checkbox" id="propina">
-            <label>Propina</label><br>
-            <input type="checkbox" id="prioritario">
-            <label>Envio prioritario</label>
-            
+            <table class="tablaOpcion">
+                <tr>
+                    <td><input type="checkbox" id="propina"></td>
+                    <td><label>Propina</label><br></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" id="prioritario"></td>
+                    <td><label>Envio prioritario</label></td>
+                </tr>
+            </table>
             <table>
                 <tr>
-                    <td><button type="button" id="volver"><- Volver</button></td>
-                    <td><button type="button" id="sig">Confirmar compra</button></td>
+                    <td><button type="button" class="botonVol" id="volver"><- Volver</button></td>
+                    <td><button type="button" class="botonSig" id="sig">Confirmar compra</button></td>
                 </tr>
             </table>
         </form>

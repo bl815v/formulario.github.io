@@ -9,14 +9,19 @@ p, h3, h6, input{
     color: #154734;    
 }
 
-input{
+input, textarea{
     width: 98%;
     border: none;
     border-bottom: 2px solid gray;
     outline: none;
     font-size: 16px;
 }
-input:focus{
+
+textarea{
+    height: 10%;
+}
+
+input:focus, textarea:focus{
     border-bottom: 2px solid #154734;
     
 }
@@ -39,18 +44,25 @@ select{
     height: 100%;
 
 }
-.tablaProducto{
+
+.tablaCiudad{
     width: 100%;
 }
-.tablaProducto input[type="number"]{
-    width: 40px;
+
+.tablaOpcion{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
+.tablaOpcion td{
+    padding-bottom: 10%;
+}
 
 button{
     cursor: pointer;
     transition-duration: 0.4s;
 }
+
 
 .botonSig{
     margin-top: 20%;
@@ -68,7 +80,7 @@ button{
 }
 
 .botonVol{
-    margin-top: 25%;
+    margin-top: 35%;
     margin-left: -4%;
     background-color: white;
     font-size: 17px;

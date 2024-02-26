@@ -11,7 +11,7 @@
             <h3>Datos de compra: </h3>
             </div>
             <p>Producto: </p>
-            <table>
+            <table class="tablaProducto">
                 <tr>
                     <td>
                         <input type="text" id="producto" placeholder="Ingrese el nombre del producto...">
@@ -27,13 +27,18 @@
                     <td><p id="precio"></p></td>
                 </tr>
             </table>
+            
             <p>Metodo de pago: </p>
-            <input type="radio" name="metodoPago" id="efectivo" value="Efectivo">
-            <label>Efectivo</label>
-            <input type="radio" name="metodoPago" id="tarjeta" value="Tarjeta">
-            <label>Tarjeta</label>
-            <input type="radio" name="metodoPago" id="pse" value="PSE">
-            <label>PSE</label>
+            <table>
+                <tr>
+                    <td><input type="radio" name="metodoPago" id="efectivo" value="Efectivo"></td>
+                    <td><label>Efectivo</label></td>
+                    <td><input type="radio" name="metodoPago" id="tarjeta" value="Tarjeta"></td>
+                    <td><label>Tarjeta</label></td>
+                    <td><input type="radio" name="metodoPago" id="pse" value="PSE"></td>
+                    <td><label>PSE</label></td>
+                </tr>
+            </table>
             <p>Direccion de facturacion: </p>
             <input type="text" id="dirFacturacion" placeholder="Ingrese su direccion...">
             <table>

@@ -1,0 +1,48 @@
+p, h3, h6, input{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+
+.titulos{
+    text-align: center;
+    font-size: 18px;
+    color: #154734;    
+}
+
+
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
+    width: 30%;
+    height: 100%;
+
+}
+
+table{
+    width: 100%;
+    border: 3px solid;
+    margin: 0 auto;
+    text-align: center;
+    border-color: #154734;
+}
+
+table td:nth-child(2){
+    text-align: left;
+}
+
+.botonVol{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    font-size: 17px;
+    padding: 5px 10px;
+    border: 1px solid #0096A0;
+}
+
+.botonVol:hover{
+    background-color: #0096A0;
+    color: white;
+    box-shadow: 0 2px 5px 0 #858585;
+}
