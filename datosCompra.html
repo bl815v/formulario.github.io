@@ -3,9 +3,9 @@
     <head>
         <title>Datos de compra</title>
         <link rel="stylesheet" type="text/css" href="estiloDatosCompra.css">
-        <!--<script src="funcion.js"></script>-->
+        <script src="funcion.js"></script>
     </head>
-    <body>
+    <body id="datosCompra">
         <h3>Datos de compra: </h3>
         <form>
             <p>Producto: </p>
@@ -26,11 +26,11 @@
                 </tr>
             </table>
             <p>Metodo de pago: </p>
-            <input type="radio" id="efectivo">
+            <input type="radio" name="metodoPago" id="efectivo" value="Efectivo">
             <label>Efectivo</label>
-            <input type="radio" id="tarjeta">
+            <input type="radio" name="metodoPago" id="tarjeta" value="Tarjeta">
             <label>Tarjeta</label>
-            <input type="radio" id="pse">
+            <input type="radio" name="metodoPago" id="pse" value="PSE">
             <label>PSE</label>
             <p>Direccion de facturacion: </p>
             <input type="text" id="dirFacturacion" placeholder="Ingrese su direccion...">
@@ -44,8 +44,8 @@
             
             <table>
                 <tr>
-                    <td><button type="button" id="volver1"><- Volver</button></td>
-                    <td><button type="button" id="sig2">Siguiente -></button></td>
+                    <td><button type="button" id="volver"><- Volver</button></td>
+                    <td><button type="button" id="sig">Siguiente -></button></td>
                 </tr>
             </table>
         </form>

@@ -3,9 +3,9 @@
     <head>
         <title>Datos de Envio</title>
         <link rel="stylesheet" type="text/css" href="estiloDatosEnvio.css">
-        <!--<script src="funcion.js"></script>-->
+        <script src="funcion.js"></script>
     </head>
-    <body>
+    <body id="datosEnvio">
         <h3>Datos de envio: </h3>
         <form>
             <table>
@@ -14,12 +14,12 @@
                         <p>Ciudad: </p>
                     </td>
                     <td>
-                        <select>
-                            <option value="Bog">Bogota D.C</option>
-                            <option value="Car">Cartagena</option>
-                            <option value="Med">Medellin</option>
-                            <option value="Tun">Tunja</option>
-                            <option value="Cuc">Cucuta</option>
+                        <select id="ciudad">
+                            <option value="Bogota D.C">Bogota D.C</option>
+                            <option value="Cartagena">Cartagena</option>
+                            <option value="Medellin">Medellin</option>
+                            <option value="Tunja">Tunja</option>
+                            <option value="Cucuta">Cucuta</option>
                         </select>
                     </td>
                 </tr>    
@@ -29,14 +29,14 @@
             <p>Descripcion extra: </p>
             <textarea id="descEntrega"></textarea><br>
             <input type="checkbox" id="propina">
-            <label>Propina</label>
+            <label>Propina</label><br>
             <input type="checkbox" id="prioritario">
             <label>Envio prioritario</label>
             
             <table>
                 <tr>
-                    <td><button type="button" id="volver2"><- Volver</button></td>
-                    <td><button type="button" id="confirmar">Confirmar compra</button></td>
+                    <td><button type="button" id="volver"><- Volver</button></td>
+                    <td><button type="button" id="sig">Confirmar compra</button></td>
                 </tr>
             </table>
         </form>

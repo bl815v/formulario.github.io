@@ -3,12 +3,12 @@
     <head>
         <title>Bienvenido!</title>
         <link rel="stylesheet" type="text/css" href="estiloIndex.css">
-        <!--<script src="funcion.js"></script>-->
+        <script src="funcion.js"></script>
     </head>
-    <body>
+    <body id="index">
         <h3>Bienvenido! </h3>
         <h6>Registrese para comprar: </h6>
-        <form>
+        <form class="formulario">
             <p>Nombres: </p>
             <input type="text" id="nombre" placeholder="Ingrese sus nombres...">
             <p>Apellidos: </p>
@@ -17,33 +17,17 @@
             <input type="email" id="email" placeholder="Ingrese su e-mail...">
             <p>Celular: </p>
             <input type="tel" id="celular" placeholder="Ingrese su numero...">
-            <table>
-                <tr>
-                    <td>
-                        <p>Ciudad: </p>
-                    </td>
-                    <td>
-                        <select>
-                            <option value="Bog">Bogota D.C</option>
-                            <option value="Car">Cartagena</option>
-                            <option value="Med">Medellin</option>
-                            <option value="Tun">Tunja</option>
-                            <option value="Cuc">Cucuta</option>
-                        </select>
-                    </td>
-                </tr>    
-            </table>
             <p>Tipo de documento: </p>
-            <select>
+            <select id="tipoDoc">
                 <option value="CC">Cedula de ciudadania</option>
                 <option value="CE">Cedula de extranjeria</option>
-                <option value="TI">Tarjeta de indentidad</option>
+                <option value="TI">Tarjeta de identidad</option>
             </select>
             <p>Numero de documento: </p>
             <input type="text" id="numDoc" placeholder="Ingrese su documento...">
             <table>
                 <tr>
-                    <td><button type="button" id="sig1">Siguiente -></button></td>
+                    <td><button type="button" id="sig" class="boton">Siguiente -></button></td>
                 </tr>
             </table>
         </form>
