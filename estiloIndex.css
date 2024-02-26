@@ -3,18 +3,21 @@ p, h3, h6, input{
 }
 
 
-h3, h6{
+.titulos{
     text-align: center;    
 }
 
 input{
-    width: 110%;
+    width: 98%;
 }
 .formulario{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-49%, -49%);
+    width: 30%;
+    height: 100%;
+
 }
 
 .boton{
