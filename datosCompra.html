@@ -14,10 +14,13 @@
             <table class="tablaProducto">
                 <tr>
                     <td>
-                        <input type="text" id="producto" placeholder="Ingrese el nombre del producto...">
+                        <input list="" id="producto" placeholder="Ingrese el nombre del producto..." autocomplete="off" role="combobox">
+                        <datalist id="productos" role="listbox">
+
+                        </datalist>
                     </td>
                     <td>
-                        <input type="number" id="cantidad" placeholder="0">
+                        <input type="number" id="cantidad" placeholder="0" min="1" max="17" step="1">
                     </td>
                 </tr>
             </table>
@@ -32,15 +35,13 @@
             <table>
                 <tr>
                     <td><input type="radio" name="metodoPago" id="efectivo" value="Efectivo"></td>
-                    <td><label>Efectivo</label></td>
+                    <td><label for="efectivo">Efectivo</label></td>
                     <td><input type="radio" name="metodoPago" id="tarjeta" value="Tarjeta"></td>
-                    <td><label>Tarjeta</label></td>
+                    <td><label for="tarjeta">Tarjeta</label></td>
                     <td><input type="radio" name="metodoPago" id="pse" value="PSE"></td>
-                    <td><label>PSE</label></td>
+                    <td><label for="pse">PSE</label></td>
                 </tr>
             </table>
-            <p>Direccion de facturacion: </p>
-            <input type="text" id="dirFacturacion" placeholder="Ingrese su direccion...">
             <table>
                 <tr>
                     <td><p>Total a pagar: $ </p></td>

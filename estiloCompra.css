@@ -46,7 +46,33 @@ select{
     width: 40px;
 }
 
+datalist {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #154734;
+    border-radius: 0 0 5px 5px;
+    border-top: none;
+    font-family: sans-serif;
+    width: auto;
+    max-width: 350px;
+    padding: 5px;
+    max-height: 90%;
+    overflow-y: auto;
+    z-index: 1;
+}
 
+option {
+    background-color: white;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+}
+
+option:hover, .active {
+    background-color: #154734;
+    color: white;
+}
 button{
     cursor: pointer;
     transition-duration: 0.4s;
@@ -80,4 +106,8 @@ button{
     background-color: #0096A0;
     color: white;
     box-shadow: 0 2px 5px 0 #858585;
+}
+
+.placeholder-rojo::placeholder {
+    color: red;
 }
